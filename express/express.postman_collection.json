@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "03aa2ebe-c101-47c1-a765-ebeace739ce8",
+		"name": "express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30814973",
+		"_collection_link": "https://planetary-sunset-510298.postman.co/workspace/Assignment-2~e67ac1f9-9e31-46f0-8b8c-dcd959559faa/collection/30814973-03aa2ebe-c101-47c1-a765-ebeace739ce8?action=share&source=collection_link&creator=30814973"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4007/getAllUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"getAllUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"name\" : \"ashraf\", \r\n    \"email\" : \"ashraff@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsersSorted",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4007/grtUsersSorted",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"grtUsersSorted"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/getUserById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"getUserById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"ahmed\",\r\n    \"email\": \"ahmed@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "getAllPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4007/getAllPosts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"getAllPosts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 4,\r\n    \"body\" : \"post 4 body\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/addPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"addPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPostsReversed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4007/getPostsReversed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"getPostsReversed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPostById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/getPostById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"getPostById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/deletePost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"deletePost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePost",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"body\": \"bbb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4007/updatePost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4007",
+							"path": [
+								"updatePost"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
